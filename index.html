@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator app</title>
+
+</head>
+<body>
+  <div class="logo">
+   <img src="./images/logo.svg" alt="splitter logo">
+  </div>
+<section class="body_container">
+  <section class="count_container">
+
+      <div class="input_number">
+        <form action="">
+          <label for="bill">Bill</label>
+          <span class="alert ">Can't be zero</span>
+          <input type="text" id="bill" placeholder="0">
+        </form>
+      </div>
+    
+      <div class="count_procent">
+        <h4>Select Tip %</h4>
+        <section class="buttons-container">
+          <button class="btn tip-button">5%</button>
+          <button class="btn tip-button">10%</button>
+          <button class="btn tip-button">15%</button>
+          <button class="btn tip-button">25%</button>
+          <button class="btn tip-button">50%</button>
+          <input class="btn tip-custom btn-6" placeholder="Custom">
+        </section>
+      </div>
+    
+      <div class="input_people">
+        <form action="">
+          <label for="people">Number of People</label>
+          <span class="alert ">Can't be zero</span>
+          <input class="people-amount" type="text" id="people" placeholder="0">
+        </form>
+      </div>
+  </section>
+  <section class="result">
+    <section class="amount-box">
+        <div class="result-title-box">
+          <p class="result-title">tip amount</p>
+          <small class="result-sub-title">/ person</small>
+        </div>
+        <div class="result-number-box">
+            <span class="result-number tip-amount">0.00</span>
+        </div>
+
+    </section>
+    <section class="total-box">
+      <div class="result-title-box">
+              <p class="result-title">total</p>
+              <small class="result-sub-title">/ person</small>
+            </div>
+            <div class="result-number-box">
+                <span class="result-number total-price">0.00</span>
+            </div>
+    </section>
+      
+      <button id="reset-btn" disabled>reset</button>
+  </section>
+
+</section>
+
+  
+  <div class="attribution">
+    Coded by <a href="https://portfolion.nasiiimdev.se/">Nasim Roshan</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
